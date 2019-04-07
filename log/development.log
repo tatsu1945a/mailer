@@ -1,0 +1,1201 @@
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `mailer_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `mailer_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('2881169274723145665', 0)[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+Migrating to CreateUsers (20190403102350)
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190403102350_create_users.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190403102350')[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-04-03 10:24:03', '2019-04-03 10:24:03')[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('2881169274723145665')[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/bin/rake:22
+Started GET "/" for 192.168.10.10 at 2019-04-03 19:46:57 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (5.3ms)
+Completed 200 OK in 23ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 192.168.10.10 at 2019-04-03 19:47:01 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 2271ms (Views: 2263.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 19:47:08 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (34.4ms)
+  Rendered users/new.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 116ms (Views: 102.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 19:47:16 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTf3Vy3Ar2ld2rFZn7bjbhFDq6o+lTpkwKLT1Y5f0mxCuHzEJujyVlfDDtIDcXbv85w+fH00aw+FO7vKq4XJ/w==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 10:47:16', '2019-04-03 10:47:16')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.8ms)
+
+
+  
+SyntaxError (/home/lmf/ZZ_WORK/rb241/mailer/app/mailers/application_mailer.rb:3: syntax error, unexpected ':', expecting keyword_end
+  	  bcc:  'vm_ha_8160@yahoo.co.jp'
+  	      ^
+/home/lmf/ZZ_WORK/rb241/mailer/app/mailers/application_mailer.rb:4: syntax error, unexpected ':', expecting keyword_end
+	  reply_to: 'vm_ha_8160@yahoo.co.jp'
+	           ^):
+  
+app/mailers/application_mailer.rb:3: syntax error, unexpected ':', expecting keyword_end
+app/mailers/application_mailer.rb:4: syntax error, unexpected ':', expecting keyword_end
+app/mailers/sample_mailer.rb:1:in `<main>'
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/" for 192.168.10.10 at 2019-04-03 19:49:15 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 192.168.10.10 at 2019-04-03 19:49:22 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 58ms (Views: 50.9ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/users/1" for 192.168.10.10 at 2019-04-03 19:49:29 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rsyhBLE8C58jAwxu8WH5WwyikjC/ZNlc/CjcSynV6+ZmJHkWnAgA0zEHY4HfX8XYj9u8HWM2c+Cp/KQvtx6gYQ==", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:58
+  [1m[36mUser Destroy (5.4ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/controllers/users_controller.rb:58
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:58
+Redirected to http://192.168.10.69:3000/users
+Completed 302 Found in 17ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/users" for 192.168.10.10 at 2019-04-03 19:49:29 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 19:49:31 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.1ms)
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 19:49:36 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+KYVhNZPyCKre6XQPnf5j+mis771O5DAbF//L+zwqRWLKZ4X3WeVHaFiGluisGwOC30maLaawaspxpcwySqyhg==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 10:49:36', '2019-04-03 10:49:36')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.8ms)
+SampleMailer#send_when_create: processed outbound mail in 1692.7ms
+Sent mail to vm_ha_8160@yahoo.co.jp (10100.2ms)
+Date: Wed, 03 Apr 2019 19:49:38 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca48fc23f4dd_fdb2ab897ed17582366b@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 12099ms (ActiveRecord: 6.9ms)
+
+
+  
+OpenSSL::SSL::SSLError (hostname "192.168.100.64" does not match the server certificate):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:21:54 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/2" for 192.168.10.10 at 2019-04-03 21:21:58 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 35.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/2/edit" for 192.168.10.10 at 2019-04-03 21:22:00 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.1ms)
+  Rendered users/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 40ms (Views: 35.5ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/users/2" for 192.168.10.10 at 2019-04-03 21:22:02 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5pB83lvyefu+MgAylH+8FdeyskOAA1lNrA0q+nyoL+5NoM5TeXAgTm0qG1p92CfLm9LMOR+5OEFK28u0VPROtQ==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:45
+Redirected to http://192.168.10.69:3000/users/2
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/2" for 192.168.10.10 at 2019-04-03 21:22:02 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:22:14 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:22:15 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:22:19 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"imQ/UmvE16tsuZ6RVfiwBgcv6DcdDz8cVEKsKTbBUxH567TBYOyKlGagIRrJPyWH5fB94V6ubncR28Q2ExtIgg==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:22:19', '2019-04-03 12:22:19')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.7ms)
+SampleMailer#send_when_create: processed outbound mail in 10.1ms
+Sent mail to vm_ha_8160@yahoo.co.jp (51.2ms)
+Date: Wed, 03 Apr 2019 21:22:19 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4a57bdeced_fdb2ab897ed1820237ba@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 2.1ms)
+
+
+  
+OpenSSL::SSL::SSLError (hostname "192.168.100.64" does not match the server certificate):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:27:59 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 363ms (Views: 346.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:28:01 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.4ms)
+  Rendered users/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:28:07 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lZk97BM1k1/OK6YKJ6vpvo41j3evLgc6hb4BIa5carTmFrZ/GB3OYMQyGYG7bHw/bOoaoeyPVlHAJ2k+i4ZxJw==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:28:07', '2019-04-03 12:28:07')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.8ms)
+SampleMailer#send_when_create: processed outbound mail in 39.0ms
+Sent mail to vm_ha_8160@yahoo.co.jp (58.0ms)
+Date: Wed, 03 Apr 2019 21:28:07 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4a6d79676b_12de2ac4485f2fe418641@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 6.7ms)
+
+
+  
+OpenSSL::SSL::SSLError (hostname "ta64.buonanotte-servire.local" does not match the server certificate):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:33:51 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 359ms (Views: 342.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:33:53 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.7ms)
+  Rendered users/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:33:58 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1MfIZRtmDORHFK+l0pGEOUktGW2S3ty4yO5Q9A0/qKOnSEP2EE5R200NEC5OVhG4q/KMu9F/jdONdzjrKOWzMA==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:33:58', '2019-04-03 12:33:58')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.9ms)
+SampleMailer#send_when_create: processed outbound mail in 39.5ms
+Sent mail to vm_ha_8160@yahoo.co.jp (58.8ms)
+Date: Wed, 03 Apr 2019 21:33:59 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4a837bd8c_13912b168238ab448499b@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 7.1ms)
+
+
+  
+OpenSSL::SSL::SSLError (hostname "buonanotte-servire.aa0.netvolante.jp" does not match the server certificate):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:38:18 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 357ms (Views: 341.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:38:21 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.2ms)
+  Rendered users/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:38:26 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RmKIfzhenGcotMGbOQMTgJVQBSa+bZlAOGX51Eb6QLU17QPsM3bBWCKtfhClxIYBd4+Q8P3MyCt9/JHLYyBbJg==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:38:26', '2019-04-03 12:38:26')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (1.0ms)
+SampleMailer#send_when_create: processed outbound mail in 39.1ms
+Sent mail to vm_ha_8160@yahoo.co.jp (59.3ms)
+Date: Wed, 03 Apr 2019 21:38:26 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4a942974b3_13c62af7e1f7e50058429@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 6.5ms)
+
+
+  
+OpenSSL::SSL::SSLError (hostname "buonanotte-servire.aa0.netvolante.jp" does not match the server certificate):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:40:51 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 359ms (Views: 342.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:40:53 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.4ms)
+  Rendered users/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:40:57 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jJJbPacxbhl0HhbFcSdizPegNcPD+xZt1P1Rm8N5Fnv/HdCurBkzJn4HqU7t4PdNFX+gFYBaRwaRZDmE5qMN6A==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:40:57', '2019-04-03 12:40:57')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (1.0ms)
+SampleMailer#send_when_create: processed outbound mail in 39.2ms
+Sent mail to vm_ha_8160@yahoo.co.jp (55.6ms)
+Date: Wed, 03 Apr 2019 21:40:57 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4a9d9ba812_15282b1c049ce1cc9637c@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 6.5ms)
+
+
+  
+OpenSSL::SSL::SSLError (hostname "buonanotte-servire.aa0.netvolante.jp" does not match the server certificate):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:44:19 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 363ms (Views: 347.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:44:21 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.3ms)
+  Rendered users/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:44:26 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTILb7eERXaJhwFz1SQZD2Qp7grQkquTQA+MmIGZir9avYD8vKwYSYOevvhJ44yOhvZ73JMz+vgFluSHpEORLA==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:44:26', '2019-04-03 12:44:26')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.8ms)
+SampleMailer#send_when_create: processed outbound mail in 38.8ms
+Sent mail to vm_ha_8160@yahoo.co.jp (45.0ms)
+Date: Wed, 03 Apr 2019 21:44:26 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4aaaa6f5a7_15922ae7a8e2c08810448@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 6.8ms)
+
+
+  
+Net::SMTPAuthenticationError (503 5.5.1 Error: authentication not enabled
+):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:46:13 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTILb7eERXaJhwFz1SQZD2Qp7grQkquTQA+MmIGZir9avYD8vKwYSYOevvhJ44yOhvZ73JMz+vgFluSHpEORLA==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:46:13', '2019-04-03 12:46:13')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.8ms)
+SampleMailer#send_when_create: processed outbound mail in 10.6ms
+Sent mail to vm_ha_8160@yahoo.co.jp (41.2ms)
+Date: Wed, 03 Apr 2019 21:46:13 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4ab15e3233_15922ae7a7f9bd5c10539@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 6.4ms)
+
+
+  
+Net::SMTPAuthenticationError (503 5.5.1 Error: authentication not enabled
+):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:46:17 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:46:20 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.3ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 56ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:46:24 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwpMfVWwgDPKd69K4KTFUq8RuWXjKUOLRkufIdL0AA4whcfuXpjdDMBuEMF8Y1DTTc4ss6CIEuAD0vc+9y4bnQ==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:46:24', '2019-04-03 12:46:24')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.7ms)
+SampleMailer#send_when_create: processed outbound mail in 11.8ms
+Sent mail to vm_ha_8160@yahoo.co.jp (16.6ms)
+Date: Wed, 03 Apr 2019 21:46:24 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4ab20a6b04_15922ae7a8e2c1a010646@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 6.5ms)
+
+
+  
+Net::SMTPAuthenticationError (503 5.5.1 Error: authentication not enabled
+):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:49:04 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:49:06 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:49:09 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fwqv4Ku4AfXaHQK0hUp6bI+OW9t/m0JjAQmNEeCkckYMhSRzoJBcytAEvT8Zje/tbVHODTw6EwhEkOUOxX5p1Q==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:49:09', '2019-04-03 12:49:09')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.7ms)
+SampleMailer#send_when_create: processed outbound mail in 9.9ms
+Sent mail to vm_ha_8160@yahoo.co.jp (41.7ms)
+Date: Wed, 03 Apr 2019 21:49:09 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4abc5ceb11_15922ae7a7f9bd5c1075@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 2.3ms)
+
+
+  
+Net::SMTPAuthenticationError (503 5.5.1 Error: authentication not enabled
+):
+  
+app/controllers/users_controller.rb:31:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for 192.168.10.10 at 2019-04-03 21:52:17 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 361ms (Views: 346.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/new" for 192.168.10.10 at 2019-04-03 21:52:19 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.2ms)
+  Rendered users/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.10 at 2019-04-03 21:52:24 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4DDJ4YhFxALcGq8+Sfuj6Wg+qtFrK6bpIgJbryDNSa+Tv0Jyg22ZPdYDELXVPDZoiuE/ByiK94JnmzOwBRdSPA==", "user"=>{"name"=>"testuser002", "email"=>"vm_ha_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser002', 'vm_ha_8160@yahoo.co.jp', '2019-04-03 12:52:24', '2019-04-03 12:52:24')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (1.0ms)
+SampleMailer#send_when_create: processed outbound mail in 39.1ms
+Sent mail to vm_ha_8160@yahoo.co.jp (52.5ms)
+Date: Wed, 03 Apr 2019 21:52:24 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha_8160@yahoo.co.jp
+Message-ID: <5ca4ac88d5eab_163e2ab16e7a8ab0738ac@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser002 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser002=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Redirected to http://192.168.10.69:3000/users/12
+Completed 302 Found in 225ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/users/12" for 192.168.10.10 at 2019-04-03 21:52:24 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 192.168.10.12 at 2019-04-04 21:09:13 +0900
+Cannot render console from 192.168.10.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 371ms (Views: 354.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/new" for 192.168.10.12 at 2019-04-04 21:09:16 +0900
+Cannot render console from 192.168.10.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (13.5ms)
+  Rendered users/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 54ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.10.12 at 2019-04-04 21:09:55 +0900
+Cannot render console from 192.168.10.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt0J1iWcq6u0CRI/+3tKSnmAtFSjZaE61s8pi/FBQ1bYPi135Cda6Y7dXr3H/xuwJ2CCYnx65Blzort1aNKebQ==", "user"=>{"name"=>"testuser0043", "email"=>"vm_ha2_8160@yahoo.co.jp"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('testuser0043', 'vm_ha2_8160@yahoo.co.jp', '2019-04-04 12:09:55', '2019-04-04 12:09:55')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering sample_mailer/send_when_create.html.erb within layouts/mailer
+  Rendered sample_mailer/send_when_create.html.erb within layouts/mailer (0.9ms)
+SampleMailer#send_when_create: processed outbound mail in 55.4ms
+Sent mail to vm_ha2_8160@yahoo.co.jp (113.2ms)
+Date: Thu, 04 Apr 2019 21:09:55 +0900
+From: from001@buonanotte-servire.aa0.netvolante.jp
+Reply-To: vm_ha_8160@yahoo.co.jp
+To: vm_ha2_8160@yahoo.co.jp
+Message-ID: <5ca5f4137d5d2_ad22b0c2c8c1b4011224@ta69.mail>
+Subject: =?UTF-8?Q?=E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81=E6=96=B0=E3=81=97=E3=81=84=E3=83=A6=E3=83=BC=E3=82=B6=E3=83=BC=E3=81=8C=E8=BF=BD=E5=8A=A0=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!doctype html>=0D
+<html lang=3D"ja">=0D
+<head>=0D
+  <meta content=3D"text/html; charset=3DUTF-8" />=0D
+</head>=0D
+<body>=0D
+  <h2>testuser0043 =E6=A7=98</h2>=0D
+  <hr />=0D
+  <p>=0D
+    =E3=81=93=E3=82=93=E3=81=AB=E3=81=A1=E3=81=AF=EF=BC=81 testuser0043=E3=
+=81=95=E3=82=93=EF=BC=81</p>=0D
+  <hr />=0D
+</body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+Redirected to http://192.168.10.69:3000/users/13
+Completed 302 Found in 383ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/13" for 192.168.10.12 at 2019-04-04 21:09:55 +0900
+Cannot render console from 192.168.10.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 33.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 192.168.10.12 at 2019-04-04 21:44:01 +0900
+Cannot render console from 192.168.10.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 20ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
